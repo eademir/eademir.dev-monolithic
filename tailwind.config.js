@@ -1,0 +1,108 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+    content: ['./src/**/*.{html,js,ts,svelte}'],
+    darkMode: 'class',
+    theme: {
+        screens: {
+            xs: '320px',
+            sm: '640px',
+            md: '821px',
+            lg: '1024px',
+            xl: '1280px',
+        },
+        colors: {
+            // =~= Theme Colors  =~=
+            // primary | #0042aa
+            'primary-50': '#d9e3f2',
+            'primary-100': '#ccd9ee',
+            'primary-200': '#bfd0ea',
+            'primary-300': '#99b3dd',
+            'primary-400': '#4d7bc4',
+            'primary-500': '#0042aa',
+            'primary-600': '#003b99',
+            'primary-700': '#003280',
+            'primary-800': '#002866',
+            'primary-900': '#002053',
+            // secondary | #4d22b3
+            'secondary-50': '#e4def4',
+            'secondary-100': '#dbd3f0',
+            'secondary-200': '#d3c8ec',
+            'secondary-300': '#b8a7e1',
+            'secondary-400': '#8264ca',
+            'secondary-500': '#4d22b3',
+            'secondary-600': '#451fa1',
+            'secondary-700': '#3a1a86',
+            'secondary-800': '#2e146b',
+            'secondary-900': '#261158',
+            // tertiary | #d95000
+            'tertiary-50': '#f9e5d9',
+            'tertiary-100': '#f7dccc',
+            'tertiary-200': '#f6d3bf',
+            'tertiary-300': '#f0b999',
+            'tertiary-400': '#e4854d',
+            'tertiary-500': '#d95000',
+            'tertiary-600': '#c34800',
+            'tertiary-700': '#a33c00',
+            'tertiary-800': '#823000',
+            'tertiary-900': '#6a2700',
+            // success | #669c35
+            'success-50': '#e8f0e1',
+            'success-100': '#e0ebd7',
+            'success-200': '#d9e6cd',
+            'success-300': '#c2d7ae',
+            'success-400': '#94ba72',
+            'success-500': '#669c35',
+            'success-600': '#5c8c30',
+            'success-700': '#4d7528',
+            'success-800': '#3d5e20',
+            'success-900': '#324c1a',
+            // warning | #EAB308
+            'warning-50': '#fcf4da',
+            'warning-100': '#fbf0ce',
+            'warning-200': '#faecc1',
+            'warning-300': '#f7e19c',
+            'warning-400': '#f0ca52',
+            'warning-500': '#EAB308',
+            'warning-600': '#d3a107',
+            'warning-700': '#b08606',
+            'warning-800': '#8c6b05',
+            'warning-900': '#735804',
+            // error | #e32400
+            'error-50': '#fbded9',
+            'error-100': '#f9d3cc',
+            'error-200': '#f8c8bf',
+            'error-300': '#f4a799',
+            'error-400': '#eb664d',
+            'error-500': '#e32400',
+            'error-600': '#cc2000',
+            'error-700': '#aa1b00',
+            'error-800': '#881600',
+            'error-900': '#6f1200',
+            // surface | #495a8f
+            'surface-50': '#dcdcde',
+            'surface-100': '#d0d0d3',
+            'surface-200': '#c4c5c8',
+            'surface-300': '#a1a2a7',
+            'surface-400': '#5a5c64',
+            'surface-500': '#131622',
+            'surface-600': '#11141f',
+            'surface-700': '#0e111a',
+            'surface-800': '#0b0d14',
+            'surface-900': '#090b11',
+        },
+        fontFamily: {
+            lato: ['Lato'],
+            sansita: ['SansitaOne'],
+        },
+        extend: {
+            typography: {
+                DEFAULT: {
+                    css: {
+                        maxWidth: '100ch', // add required value here
+                    },
+                },
+            },
+        },
+    },
+    plugins: [require('@tailwindcss/typography')],
+};

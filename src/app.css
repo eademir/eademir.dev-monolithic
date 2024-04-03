@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: SansitaOne;
+    src: url(fonts/SansitaOne.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato-Italic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato-BoldItalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    margin: 20px 0;
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #d95000;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #a33c00;
+}
